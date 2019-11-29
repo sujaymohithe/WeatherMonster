@@ -1,0 +1,3 @@
+export const GET_CITIES = "GET_CITIES";
+export const ADD_CITY_TO_LIST = "ADD_CITY_TO_LIST";
+export const REMOVE_CITY_FROM_LIST = "REMOVE_CITY_FROM_LIST";
