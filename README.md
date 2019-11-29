@@ -2,11 +2,18 @@
 The application supported to run in chrome , firefox, Safari browsers. Please refer package json file to see supported browsers
 
 ## The api http://api.openweathermap.org/ data
-The temperature given by the api seems not realistic as it gives temperature as 200+ degree Celcius , i have not altered this data which comes from API as for example temp_min":276.48,"temp_max":280.93 and dispalying it as is.
+The temperature given by the api seems not realistic as it gives temperature in range of 200+ degree Celcius , i have not altered this data which comes from API as for example temp_min":276.48,"temp_max":280.93 but dispalying it as is.
+
+## https://github.com/sujaymohithe/WeatherMonster.git
+My Git Hub Repository url where code in checked in
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+To set up the node modules folder, please use npm install.<br />
 
 ### `npm start`
 
