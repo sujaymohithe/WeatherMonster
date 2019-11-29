@@ -4,6 +4,18 @@
     border: 1px solid black;
 }
 
+@media only screen and (min-width: 1000px) {
+    .Inline {
+        width : 25%;
+    }
+  }
+
+@media only screen and (max-width: 999px) {
+    .Inline {
+        width : 50%;
+    }
+  }
+
 .Button {
     cursor: pointer;
     text-decoration:none;

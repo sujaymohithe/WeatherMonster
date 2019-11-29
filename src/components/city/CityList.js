@@ -56,7 +56,7 @@ class CityList extends React.Component {
     render() {
         return (
             <form>
-                <input list="cities" className="form-input" id="inpCity" placeholder="Type the name of a city" />
+                <input list="cities" className="form-input Inline" id="inpCity" placeholder="Type the name of a city" />
                 <datalist id="cities">
                     {this.props.cities && this.props.cities.map(this.populateCityList, this)}
                 </datalist>
