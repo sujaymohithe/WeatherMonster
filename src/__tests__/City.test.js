@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Provider } from "react-redux";
-import { WeatherHomeReducer } from "../reducers/WeatherHomeReducer";
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import App from '../App';
@@ -20,7 +19,7 @@ describe('<CityList />', () => {
         expect(wrapper.find('datalist').length).toEqual(1);
     })
 
-    it('Should render the city list with 2 in numbers', () => {
+    it('Should render the city list with 2 cities in number', () => {
         wrapper.setProps({ cities: ["Berlin", "Munich"] });
         expect(wrapper.find('datalist option').length).toEqual(2);
     })
@@ -48,7 +47,6 @@ describe('<CityList />', () => {
             </Provider>);
         const wrapper = component.find("#inpCity");
         wrapper.instance().value = "Berlin";
-        console.log(wrapper.debug());
         const button = component.find(CityList).find('#btnSearch').at(0);
         button.simulate('click');       
     })

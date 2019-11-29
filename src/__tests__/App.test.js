@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from "react-redux";
@@ -14,7 +14,6 @@ it('renders App Component', () => {
         <Provider store={store} >
             <App />
         </Provider>);
-    //console.log(wrapper.debug());
     expect(wrapper.find('.App').length).toEqual(1);
 })
 

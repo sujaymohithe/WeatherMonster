@@ -4,9 +4,8 @@ import './CityList.css';
 
 class CityList extends React.Component {
 
-    //check user enters or selects a value as in list and nothing out of the list
+    //check user enters or selects a value as in list and nothing out of the drop down list
     validateCityInput(selectedInputCity) {
-        debugger;
         let index = this.props.cities.findIndex(item => selectedInputCity.toLowerCase() === item.toLowerCase());
         if (index === -1) {
             return false;
@@ -16,8 +15,6 @@ class CityList extends React.Component {
 
     //check if city when trying to add to list is already present in list
     validateIfCityIsAlreadyInList(selectedInputCity) {
-        debugger;
-        //check if city when trying to add to list is already present in list
         let index = this.props.weatherData.findIndex(item => selectedInputCity.toLowerCase() === item.cityName.toLowerCase());
         if (index === -1) {
             return false;
@@ -28,6 +25,7 @@ class CityList extends React.Component {
     //this function is used to add a city to my list and get weather data simultaneously
     addCityToMyListClick() {
         let selectedInputCity = "";
+        //not using state hooks here because element inpCity is associated with html5 datalist element and drop down select auto sets value into input element
         var inputCity = document.getElementById('inpCity');
         if (typeof (inputCity) != 'undefined' && inputCity != null) {
             selectedInputCity = inputCity.value;

@@ -28,6 +28,7 @@ function mapStateToProps(state) {
     }
 }
 
+//these functions will be accessible via props in other child components
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({
         getCities: getCities,

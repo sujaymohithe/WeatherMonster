@@ -20,7 +20,7 @@ class WeatherWidget extends React.Component {
         );
     }
 
-    //removing city from my list
+    //function call for removing city from my list
     removeCityFromMyListClick(cityName) {
         this.props.removeCityFromList(cityName);
     }

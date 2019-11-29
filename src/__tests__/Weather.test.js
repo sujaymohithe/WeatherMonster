@@ -10,7 +10,7 @@ import {store} from '../store';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe('Weather Home And Widget Component', () => {
+describe('Weather Home And Weather Widget Component', () => {
     it('Should render the WeatherHome component', () => {
         const wrapper = shallow(
             <Provider store={store}>
